@@ -27,7 +27,7 @@
 
 .navbar.sticky {
     padding: 30px 0;
-    background: red;
+    background: lightblue;
 }
 
 .navbar.sticky .logo a span{
@@ -40,13 +40,13 @@
 }
 
 .navbar .logo a {
-    color: #fff;
+    color: black;
     font-size: 35px;
     font-weight: 600;
 }
 
 .navbar .logo a span {
-    color: crimson;
+    color: lightblue;
 }
 
 .navbar .menu li {
@@ -55,7 +55,7 @@
 }
 
 .navbar .menu li a {
-    color: White;
+    color: black;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -63,12 +63,12 @@
 }
 
 .navbar .menu li a:hover {
-    color: crimson;
+    color: #006400;
 }
 
 /* menu button styling */
 .menu-btn {
-    color: white;
+    color: #000;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -80,11 +80,13 @@
 /* Home Sektion styling */
 .home {
     display: flex;
-    background: black;
+    background: url(images/baggrundMerete.jpg)no-repeat center;
     height: 100vh;
-    color: #fff;
+    color: black;
     min-height: 600px;
     font-family: 'Ubuntu', sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .home .max-width {
@@ -108,24 +110,24 @@
 }
 
 .home .home-content .text-3 span {
-    color: crimson;
+    color: #006400;
     font-weight: 500;
 }
 
 .home .home-content a {
-    display: inline-block;
-    background: crimson;
+    display: inline-block;  
+    background: #006400;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #006400;
     transition: all 0.3s ease;
 }
 
 .home .home-content a:hover {
-    color: crimson;
+    color: #006400;
     background: none;
 }
 
@@ -144,6 +146,7 @@ section .title {
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px;
 }
 
 section .titlebefore {
@@ -153,7 +156,7 @@ section .titlebefore {
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: #fff;
     transform: translateX(-50%);
 }
 
@@ -162,20 +165,27 @@ section .title::after {
     bottom: -90px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: rebeccapurple;
     padding: 5px;
-    background: #fff;
     transform: translateX(-50%);
+
 }
 
 /* Om mig sektion styling */
 
+.about{
+    background-image: url(images/baggrundgr%C3%B8n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px
+    
+}
 .about, .services {
-    font-family: 'Poppins'
+    font-family: 'Poppins';
 }
 
 .about .title::after{
-    content: "Hvem er jeg"
+    content: ""
 }
 .about .about-content, .services .serv-content, .contact, .contact-content, .gallery {
     display: flex;
@@ -207,7 +217,7 @@ section .title::after {
 }
 
 .about .about-content .right .text span {
-    color: crimson;
+    color: rebeccapurple;
 }
 
 .about .about-content .right p {
@@ -216,39 +226,43 @@ section .title::after {
 
 .about .about-content .right a {
     display: inline-block;
-    background: crimson;
+    background: #006400;
     color: #fff;
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #006400;
     transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover {
-    color: crimson;
+    color: #006400;
     background: none;
 }
 
 /* Services styling sektion */
 .services{
-    color: #fff;
-    background: #111;
+    margin: auto;
+    color: black;
+    background-image: url(images/baggrundbl%C3%A5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1100px;
 }
 .services .titlebefore{
-    color: #fff;
+    color: black;
 }
 .services .titleafter{
-    background: #111;
+    background: black;
     content:"";
 }
 .services .serv-content .card{
-    width: (33% - 20px);
-    background: #222;
+    width: 33%;
+    background: none;
     text-align: center;
     border-radius: 6px;
-    padding: 20px 25px;
+    padding: 10px 10px;
     transition: all 0.3s ease;
 }
 .services .serv-content .card .box{
@@ -258,11 +272,11 @@ section .title::after {
     transform: scale(1.05);
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background: #006400;
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: #006400;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -275,14 +289,33 @@ section .title::after {
 }
 /* Galleri sektion styling*/
 .gallery{
-    background: #111;
+    background-image: url(images/baggrundlilla.jpg);
+    background-repeat: no-repeat;
+    background-size: 1100px;
+    background-position: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery .title{
-    color: #fff;
+    color: black;
+    padding-top: 10px
+}
+.img-area{
+    align-content: center;
+    padding-left: 110px
+}
+.img-area img{
+    width: 230px;
+    padding: 5px;
+    transition: 1s;
+    height: 230px;
+}
+.gallery img:hover{
+    transform: scale(1.1);
 }
 /* Kontakt sektion styling*/
-
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -301,22 +334,27 @@ section .title::after {
     display: flex;
     height: 65px;
     align-items: center;
+
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
+    
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #006400;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
     color: #333;
+    
 }
+
 .contact .right form .fields{
     display: flex;
+    
 }
 .contact .right form .field,
 .contact .right form .fields .field{
@@ -327,6 +365,7 @@ section .title::after {
 .contact .right form .textarea{
     height: 80px;
     width: 100%;
+    
 }
 .contact .right form .name{
     margin-right: 10px;
@@ -361,8 +400,8 @@ section .title::after {
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid crimson;
-    background: crimson;
+    border: 2px solid #006400;
+    background: #006400;
     color: #fff;
     outline: none;
     font-size: 20px;
@@ -372,9 +411,10 @@ section .title::after {
     transition: all 0.3s ease;
 }
 .contact .right form .button button:hover{
-    color: crimson;
+    color: #006400;
     background: none;
 }
+
 
 
 /* footer section styling */
@@ -385,7 +425,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: crimson;
+    color: #005A9C;
     text-decoration: none;
 }
 footer span a:hover{
@@ -434,7 +474,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #fff;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
